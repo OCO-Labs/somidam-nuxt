@@ -5,7 +5,8 @@ import eslintPlugin from 'vite-plugin-eslint'
 export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss'],
   plugins: [
-    { src: '~/plugins/aos', mode: 'client' }
+    { src: '~/plugins/aos', mode: 'client' },
+    { src: '~/plugins/vercel.js', mode: 'client' }
   ],
   vite: {
     plugins: [

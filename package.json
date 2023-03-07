@@ -20,6 +20,7 @@
     "nuxt": "^3.2.3"
   },
   "dependencies": {
+    "@vercel/analytics": "^0.1.11",
     "aos": "^2.3.4",
     "eslint-plugin-nuxt": "^4.0.0",
     "install": "^0.13.0",
