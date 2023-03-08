@@ -12,7 +12,7 @@ export default {
     <div class="snap-start h-screen w-screen bg-[url('@/assets/startPic.webp')] bg-center bg-cover ">
       <div class="flex flex-col items-center justify-center w-full h-[50rem] bg-orange-100 bg-opacity-50">
         <img
-          src="../assets/somidam_logo.svg"
+          src="~/assets/somidam_logo.svg"
           class="object-contain h-52 w-52 mx-auto"
         >
       </div>
@@ -21,32 +21,32 @@ export default {
     <div class="snap-start h-screen w-screen">
       <NavBar />
       <img
-        src="../assets/somidam_logo.svg"
+        src="~/assets/somidam_logo.svg"
         class="object-contain h-screen w-screen bg-white mx-auto"
       >
     </div>
     <div class="snap-start h-screen w-screen">
       <img
-        src="../assets/somidam_logo.svg"
+        src="~/assets/somidam_logo.svg"
         class="object-contain h-screen w-full bg-black mx-auto"
       >
     </div>
 
     <div class="snap-start h-screen w-screen">
       <img
-        src="../assets/somidam_logo.svg"
+        src="~/assets/somidam_logo.svg"
         class="object-contain h-screen w-full bg-white mx-auto"
       >
     </div>
     <div class="snap-start h-screen w-screen">
       <img
-        src="../assets/somidam_logo.svg"
+        src="~/assets/somidam_logo.svg"
         class="object-contain h-screen w-full bg-black mx-auto"
       >
     </div>
     <div class="snap-start h-screen w-screen">
       <img
-        src="../assets/somidam_logo.svg"
+        src="~/assets/somidam_logo.svg"
         class="object-contain h-screen w-full bg-black mx-auto"
       >
     </div>
