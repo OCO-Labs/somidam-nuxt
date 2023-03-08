@@ -1,5 +1,5 @@
 <script>
-import NavBar from '../components/NavBar.vue'
+import NavBar from '~/components/NavBar.vue'
 
 export default {
   name: 'JoinView',
@@ -21,7 +21,7 @@ export default {
   <div class="w-full h-[50rem] bg-[url('@/assets/startPic.webp')] bg-center bg-cover">
     <div class="flex flex-col items-center justify-center w-full h-[50rem] bg-orange-100 bg-opacity-50">
       <img
-        src="../assets/logo.svg"
+        src="~/assets/logo.svg"
         alt="Somidam Logo"
         width="150"
         height="150"

@@ -2,7 +2,7 @@
   <div class="border-b">
     <div class="container flex sm:flex-row flex-col items-center justify-between sm:mx-auto sm:px-0 px-4 my-4">
       <img
-        src="../assets/logo.svg"
+        src="~/assets/logo.svg"
         alt="Somidam Logo"
         width="110"
         height="110"
@@ -34,7 +34,7 @@
             가맹안내
           </nuxt-link>
         </div>
-        <div class="flex justify-between space-x-3 sm:pt-0 pt-4">
+        <!-- <div class="flex justify-between space-x-3 sm:pt-0 pt-4">
           <img
             src="../assets/sns/facebook.svg"
             alt="facebook"
@@ -53,7 +53,6 @@
             width="12"
             height="12"
           >
-          <!-- 네이버 svg 만들어야 함 -->
           <img
             src="../assets/sns/naver.svg"
             alt="naver"
@@ -66,7 +65,7 @@
             width="12"
             height="12"
           >
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

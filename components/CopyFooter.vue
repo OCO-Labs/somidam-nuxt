@@ -2,7 +2,7 @@
   <div class="bg-gray-200 md:px-28 px-4 py-10">
     <div class="flex xl:flex-row sm:flex-col flex-col justify-between">
       <img
-        src="../assets/logo.svg"
+        src="~/assets/logo.svg"
         alt="Somidam Logo"
         width="180"
         height="180"
@@ -48,7 +48,7 @@
         </div>
       </div>
       <div class="flex flex-col items-end lg:pt-0 pt-2">
-        <div class="text-2xl font-bold mb-2">
+        <!-- <div class="text-2xl font-bold mb-2">
           FOLLOW US
         </div>
         <div class="flex space-x-3">
@@ -70,7 +70,6 @@
             width="12"
             height="12"
           >
-          <!-- 네이버 svg 만들어야 함 -->
           <img
             src="../assets/sns/naver.svg"
             alt="naver"
@@ -83,7 +82,7 @@
             width="12"
             height="12"
           >
-        </div>
+        </div> -->
         <div class="text-2xl font-bold mt-2">
           CONTACT US
         </div>
