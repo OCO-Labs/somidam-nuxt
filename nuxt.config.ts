@@ -15,16 +15,8 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      htmlAttrs: {
-        lang: 'ko'
-      },
       charset: 'utf-8',
-      viewport: 'width=device-width, initial-scale=1',
-      title: '소미담',
-      meta: [
-        // <meta name="description" content="My amazing site">
-        { name: 'description', content: '재료 본연의 맛과 정성을 담아 만든 떡' }
-      ]
+      viewport: 'width=device-width, initial-scale=1'
     }
   }
 })

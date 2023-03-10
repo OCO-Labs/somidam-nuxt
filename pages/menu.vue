@@ -14,7 +14,7 @@ export default ({
     <Title>메뉴</Title>
     <Meta
       name="description"
-      content="메뉴"
+      content="찾으시는 메뉴를 클릭해서 확인해보세요"
     />
   </Head>
   <NavBar />

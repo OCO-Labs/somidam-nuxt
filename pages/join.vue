@@ -14,7 +14,7 @@ export default {
     <Title>가맹문의</Title>
     <Meta
       name="description"
-      content="가맹문의"
+      content="창업 성공을 위한 든든한 파트너가 되도록 노력하겠습니다. 가맹점 관련하여 궁금한 점은 언제든 문의주시기 바랍니다."
     />
   </Head>
   <NavBar />
