@@ -1,22 +1,24 @@
-<script>
-import NavBar from '~/components/NavBar.vue'
+<script setup>
+import { useHead } from 'nuxt/app'
 
+useHead({
+  title: '소미담 | 가맹문의',
+  meta: [
+    {
+      name: 'description',
+      content: '재료 본연의 맛과 정성을 담아 만든 떡'
+    }
+  ]
+})
+</script>
+
+<script>
 export default {
-  name: 'JoinView',
-  components: {
-    NavBar
-  }
+  name: 'MenuPage'
 }
 </script>
 
 <template>
-  <Head>
-    <Title>가맹문의</Title>
-    <Meta
-      name="description"
-      content="창업 성공을 위한 든든한 파트너가 되도록 노력하겠습니다. 가맹점 관련하여 궁금한 점은 언제든 문의주시기 바랍니다."
-    />
-  </Head>
   <NavBar />
   <div class="w-full h-[50rem] bg-[url('@/assets/startPic.webp')] bg-center bg-cover">
     <div class="flex flex-col items-center justify-center w-full h-[50rem] bg-orange-100 bg-opacity-50">

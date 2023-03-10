@@ -1,22 +1,24 @@
-<script>
-import NavBar from '~/components/NavBar'
+<script setup>
+import { useHead } from 'nuxt/app'
 
-export default ({
-  name: 'MenuView',
-  components: {
-    NavBar
-  }
+useHead({
+  title: '소미담 | 메뉴',
+  meta: [
+    {
+      name: 'description',
+      content: '재료 본연의 맛과 정성을 담아 만든 떡'
+    }
+  ]
 })
 </script>
 
+<script>
+export default {
+  name: 'MenuPage'
+}
+</script>
+
 <template>
-  <Head>
-    <Title>메뉴</Title>
-    <Meta
-      name="description"
-      content="찾으시는 메뉴를 클릭해서 확인해보세요"
-    />
-  </Head>
   <NavBar />
   <div class="container mx-auto">
     <div class="flex flex-col items-center">

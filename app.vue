@@ -1,11 +1,9 @@
-<script>
-import CopyFooter from './components/CopyFooter.vue'
+<script setup>
+import { useHead } from 'nuxt/app'
 
-export default {
-  components: {
-    CopyFooter
-  }
-}
+useHead({
+  htmlAttrs: { lang: 'ko' }
+})
 </script>
 
 <template>

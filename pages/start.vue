@@ -1,12 +1,21 @@
-<script>
-import NavBar from '~/components/NavBar.vue'
+<script setup>
+import { useHead } from 'nuxt/app'
 import AOS from 'aos'
 
+useHead({
+  title: '소미담 | 창업안내',
+  meta: [
+    {
+      name: 'description',
+      content: '재료 본연의 맛과 정성을 담아 만든 떡'
+    }
+  ]
+})
+</script>
+
+<script>
 export default {
   name: 'StartPage',
-  components: {
-    NavBar
-  },
   mounted () {
     AOS.init()
   }
@@ -14,13 +23,6 @@ export default {
 </script>
 
 <template>
-  <Head>
-    <Title>창업안내</Title>
-    <Meta
-      name="description"
-      content="창업안내"
-    />
-  </Head>
   <NavBar />
   <div class="w-full h-[50rem] bg-[url('@/assets/startPic.webp')] bg-center bg-cover">
     <div class="flex flex-col items-center justify-center w-full h-[50rem] bg-orange-100 bg-opacity-50">
