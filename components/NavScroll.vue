@@ -6,13 +6,6 @@ function buttonHandler () {
 
 <template>
   <button
-    title="STORE"
-    class="fixed z-90 bottom-[310px] right-8 bg-[#a36036] w-20 h-20 rounded-full drop-shadow-lg flex justify-center items-center text-white text-24xl font-bold hover:bg-[#727272] hover:drop-shadow-2xl hover:animate-bounce duration-300"
-    @click="buttonHandler"
-  >
-    STORE
-  </button>
-  <button
     title="Chat Button"
     class="fixed z-90 bottom-[220px] right-8 bg-yellow-400 w-20 h-20 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl hover:bg-blue-700 hover:drop-shadow-2xl hover:animate-bounce duration-300"
     @click="buttonHandler"
