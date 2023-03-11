@@ -1,6 +1,13 @@
 <script setup>
 import { useHead } from 'nuxt/app'
 import AOS from 'aos'
+import { onMounted } from 'vue'
+import { initFlowbite } from 'flowbite'
+
+onMounted(() => {
+  initFlowbite()
+  AOS.init()
+})
 
 useHead({
   title: '소미담 | 창업안내',
@@ -16,10 +23,7 @@ useHead({
 
 <script>
 export default {
-  name: 'StartPage',
-  mounted () {
-    AOS.init()
-  }
+  name: 'StartPage'
 }
 </script>
 
@@ -323,172 +327,288 @@ export default {
       * 인테리어 공사 중 볃도공사제외: 키오스크, 냉난방, 소방, 전기증설, 화장실, 철거, 계단, 어닝, 용도변경 등 도면 포기 외 공사
     </div>
   </div>
-  <div id="accordionExample">
+  <div class="2xl:mx-60 xl:mx-56 lg:mx-40 md:mx-24 sm:mx-12 mx-4 mb-20">
+    <h1 class="text-3xl font-extrabold font-nanumsquare mb-8">
+      창업 자금 지원 제도 안내
+    </h1>
+    <h2 class="text-xl font-extrabold font-nanumsquare mb-2">
+      지원기관
+    </h2>
+    <hr class="border-black border-[0.1rem]">
     <div
-      class="rounded-t-lg border border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800"
+      id="accordion-flush"
+      data-accordion="collapse"
+      data-active-classes="bg-white"
+      data-inactive-classes="text-gray-500"
     >
-      <h2
-        id="headingOne"
-        class="mb-0"
-      >
+      <h2 id="accordion-flush-heading-1">
         <button
-          class="group relative flex w-full items-center rounded-t-[15px] border-0 bg-white py-4 px-5 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
           type="button"
-          data-te-collapse-init
-          data-te-target="#collapseOne"
-          aria-expanded="true"
-          aria-controls="collapseOne"
+          class="flex items-center justify-between w-full py-5 font-nanumsquare font-extrabold text-left border-b border-gray-200"
+          data-accordion-target="#accordion-flush-body-1"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-1"
         >
-          Accordion Item #1
-          <span
-            class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="h-6 w-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-              />
-            </svg>
-          </span>
+          <span>근로복지공단</span>
+          <svg
+            data-accordion-icon
+            class="w-6 h-6 rotate-180 shrink-0"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          ><path
+            fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          /></svg>
         </button>
       </h2>
       <div
-        id="collapseOne"
-        class="!visible"
-        data-te-collapse-item
-        data-te-collapse-show
-        aria-labelledby="headingOne"
-        data-te-parent="#accordionExample"
+        id="accordion-flush-body-1"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-1"
       >
-        <div class="py-4 px-5">
-          <strong>This is the first item's accordion body.</strong> It is
-          shown by default, until the collapse plugin adds the appropriate
-          classes that we use to style each element. These classes control
-          the overall appearance, as well as the showing and hiding via CSS
-          transitions. You can modify any of this with custom CSS or
-          overriding our default variables. It's also worth noting that just
-          about any HTML can go within the <code>.accordion-body</code>,
-          though the transition does limit overflow.
+        <div class="py-5 font-bold border-b border-gray-200">
+          <p class="font-nanumsquare text-sm">
+            자금명: 장기 실업자 자금 / 실직 여성 자영업 자금
+          </p>
+          <p class="font-nanumsquare text-sm">
+            대상자: 현장 실습 단기 창업 교육 이수자
+          </p>
+          <p class="font-nanumsquare text-sm">
+            금리: 3.4%
+          </p>
+          <p class="font-nanumsquare text-sm">
+            대출 금액: 최대 10,000,000원
+          </p>
         </div>
       </div>
-    </div>
-    <div
-      class="border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800"
-    >
-      <h2
-        id="headingTwo"
-        class="mb-0"
-      >
+      <h2 id="accordion-flush-heading-2">
         <button
-          class="group relative flex w-full items-center rounded-none border-0 bg-white py-4 px-5 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
           type="button"
-          data-te-collapse-init
-          data-te-collapse-collapsed
-          data-te-target="#collapseTwo"
+          class="flex items-center justify-between w-full py-5 font-nanumsquare font-extrabold text-left border-b border-gray-200"
+          data-accordion-target="#accordion-flush-body-2"
           aria-expanded="false"
-          aria-controls="collapseTwo"
+          aria-controls="accordion-flush-body-2"
         >
-          Accordion Item #2
-          <span
-            class="ml-auto -mr-1 h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="h-6 w-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-              />
-            </svg>
-          </span>
+          <span>서울시</span>
+          <svg
+            data-accordion-icon
+            class="w-6 h-6 rotate-180 shrink-0"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          ><path
+            fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          /></svg>
         </button>
       </h2>
       <div
-        id="collapseTwo"
-        class="!visible hidden"
-        data-te-collapse-item
-        aria-labelledby="headingTwo"
-        data-te-parent="#accordionExample"
+        id="accordion-flush-body-2"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-2"
       >
-        <div class="py-4 px-5">
-          <strong>This is the second item's accordion body.</strong> It is
-          hidden by default, until the collapse plugin adds the appropriate
-          classes that we use to style each element. These classes control
-          the overall appearance, as well as the showing and hiding via CSS
-          transitions. You can modify any of this with custom CSS or
-          overriding our default variables. It's also worth noting that just
-          about any HTML can go within the <code>.accordion-body</code>,
-          though the transition does limit overflow.
+        <div class="py-5 font-bold border-b border-gray-200">
+          <p class="font-nanumsquare text-sm">
+            자금명: 서울시 자영업자 유동성 특례보존에 의한 운영자금
+          </p>
+          <p class="font-nanumsquare text-sm">
+            대상자: 서울시 소재 사업자 등록 후 6개월 이상 운영자
+          </p>
+          <p class="font-nanumsquare text-sm">
+            금리: 5~6%
+          </p>
+          <p class="font-nanumsquare text-sm mb-4">
+            대출 금액: 최대 20,000,000원
+          </p>
+          <p class="font-nanumsquare text-sm">
+            자금명: 서울시 중소기업 육성 자금에 의한 임차자금
+          </p>
+          <p class="font-nanumsquare text-sm">
+            대상자: 창업 교육 이수 및 사업 컨설팅 받은 자로서 3개월 내 창업자 또는 업종 전환자
+          </p>
+          <p class="font-nanumsquare text-sm">
+            금리: CD 연동금리에 서울시가 보전한 변동금리
+          </p>
+          <p class="font-nanumsquare text-sm">
+            대출 금액: 최대 30,000,000~50,000,000원
+          </p>
         </div>
       </div>
-    </div>
-    <div
-      class="rounded-b-lg border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800"
-    >
-      <h2
-        id="headingThree"
-        class="accordion-header mb-0"
-      >
+      <h2 id="accordion-flush-heading-3">
         <button
-          class="group relative flex w-full items-center border-0 bg-white py-4 px-5 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)] [&[data-te-collapse-collapsed]]:rounded-b-[15px] [&[data-te-collapse-collapsed]]:transition-none"
           type="button"
-          data-te-collapse-init
-          data-te-collapse-collapsed
-          data-te-target="#collapseThree"
+          class="flex items-center justify-between w-full py-5 font-nanumsquare font-extrabold text-left border-b border-gray-200"
+          data-accordion-target="#accordion-flush-body-3"
           aria-expanded="false"
-          aria-controls="collapseThree"
+          aria-controls="accordion-flush-body-3"
         >
-          Accordion Item #3
-          <span
-            class="ml-auto -mr-1 h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="h-6 w-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-              />
-            </svg>
-          </span>
+          <span>소상공인지원센터</span>
+          <svg
+            data-accordion-icon
+            class="w-6 h-6 rotate-180 shrink-0"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          ><path
+            fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          /></svg>
         </button>
       </h2>
       <div
-        id="collapseThree"
-        class="!visible hidden"
-        data-te-collapse-item
-        aria-labelledby="headingThree"
-        data-te-parent="#accordionExample"
+        id="accordion-flush-body-3"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-3"
       >
-        <div class="py-4 px-5">
-          <strong>This is the third item's accordion body.</strong> It is
-          hidden by default, until the collapse plugin adds the appropriate
-          classes that we use to style each element. These classes control
-          the overall appearance, as well as the showing and hiding via CSS
-          transitions. You can modify any of this with custom CSS or
-          overriding our default variables. It's also worth noting that just
-          about any HTML can go within the <code>.accordion-body</code>,
-          though the transition does limit overflow.
+        <div class="py-5 font-bold border-b border-gray-200">
+          <p class="font-nanumsquare text-sm">
+            대상자: 창업자 교육 12시간 이수한 자로서 점포 임대 계약자
+          </p>
+          <p class="font-nanumsquare text-sm">
+            금리: 5.7%
+          </p>
+          <p class="font-nanumsquare text-sm">
+            대출 금액: 최대 50,000,000원
+          </p>
+        </div>
+      </div>
+      <h2 id="accordion-flush-heading-4">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-nanumsquare font-extrabold text-left border-b border-gray-200"
+          data-accordion-target="#accordion-flush-body-4"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-4"
+        >
+          <span>여성경제인협회</span>
+          <svg
+            data-accordion-icon
+            class="w-6 h-6 rotate-180 shrink-0"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          ><path
+            fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          /></svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-4"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-4"
+      >
+        <div class="py-5 font-bold border-b border-gray-200">
+          <p class="font-nanumsquare text-sm">
+            자금명: 여성가장 창업자금 지원사업(점포 임대 보증금 지원)
+          </p>
+          <p class="font-nanumsquare text-sm">
+            대상자: 여성가장으로서 부양가족이 1인 이상인 자
+          </p>
+          <p class="font-nanumsquare text-sm">
+            금리: 2%
+          </p>
+          <p class="font-nanumsquare text-sm">
+            대출 금액: 최대 50,000,000원
+          </p>
+        </div>
+      </div>
+      <h2 id="accordion-flush-heading-5">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-nanumsquare font-extrabold text-left border-b border-gray-200"
+          data-accordion-target="#accordion-flush-body-5"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-5"
+        >
+          <span>장애인고용촉진공단</span>
+          <svg
+            data-accordion-icon
+            class="w-6 h-6 rotate-180 shrink-0"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          ><path
+            fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          /></svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-5"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-5"
+      >
+        <div class="py-5 font-bold border-b border-gray-200">
+          <p class="font-nanumsquare text-sm">
+            자금명: 자영업 창업자금(점포 임대 보증금 및 시설자금 지원)
+          </p>
+          <p class="font-nanumsquare text-sm">
+            대상자: 창업 희망 장애인(창업 교육을 이수한 자)
+          </p>
+          <p class="font-nanumsquare text-sm">
+            금리: 3%
+          </p>
+          <p class="font-nanumsquare text-sm">
+            대출 금액: 최대 50,000,000원
+          </p>
+        </div>
+      </div>
+      <h2 id="accordion-flush-heading-6">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-nanumsquare font-extrabold text-left border-b border-gray-200"
+          data-accordion-target="#accordion-flush-body-6"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-6"
+        >
+          <span>미소금융재단</span>
+          <svg
+            data-accordion-icon
+            class="w-6 h-6 rotate-180 shrink-0"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          ><path
+            fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          /></svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-6"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-6"
+      >
+        <div class="py-5 font-bold border-b border-gray-200">
+          <p class="font-nanumsquare text-sm">
+            자금명: 프랜차이즈 창업자금 대출/창업 임차자금 대출
+          </p>
+          <p class="font-nanumsquare text-sm">
+            대상자: 현장 실습 단기 창업 교육 이수자
+          </p>
+          <p class="font-nanumsquare text-sm">
+            금리: 4.5%
+          </p>
+          <p class="font-nanumsquare text-sm mb-4">
+            대출 금액: 최대 50,000,000원
+          </p>
+          <p class="font-nanumsquare text-sm">
+            자금명: 운영자금대출/시설개선 자금대출
+          </p>
+          <p class="font-nanumsquare text-sm">
+            금리: 4.5%
+          </p>
+          <p class="font-nanumsquare text-sm">
+            대출 금액: 최대 10,000,000원
+          </p>
         </div>
       </div>
     </div>

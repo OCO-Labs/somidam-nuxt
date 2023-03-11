@@ -9,5 +9,11 @@ export default {
         nanumsquare: ['nanumsquare', 'sans-serif']
       }
     }
-  }
+  },
+  plugins: [
+    require('flowbite')
+  ],
+  content: [
+    './node_modules/flowbite.{js,ts}'
+  ]
 }
