@@ -18,33 +18,33 @@ export default {
       </div>
     </div>
     <NavScroll />
-    <div class="snap-start h-screen w-screen">
+    <div class="snap-start snap-always h-screen w-screen">
       <NavBar />
       <img
         src="~/assets/somidam_logo.svg"
         class="object-contain h-screen w-screen bg-white mx-auto"
       >
     </div>
-    <div class="snap-start h-screen w-screen">
+    <div class="snap-start snap-always h-screen w-screen">
       <img
         src="~/assets/somidam_logo.svg"
         class="object-contain h-screen w-full bg-black mx-auto"
       >
     </div>
 
-    <div class="snap-start h-screen w-screen">
+    <div class="snap-start snap-always h-screen w-screen">
       <img
         src="~/assets/somidam_logo.svg"
         class="object-contain h-screen w-full bg-white mx-auto"
       >
     </div>
-    <div class="snap-start h-screen w-screen">
+    <div class="snap-start snap-always h-screen w-screen">
       <img
         src="~/assets/somidam_logo.svg"
         class="object-contain h-screen w-full bg-black mx-auto"
       >
     </div>
-    <div class="snap-start h-screen w-screen">
+    <div class="snap-start snap-always h-screen w-screen">
       <img
         src="~/assets/somidam_logo.svg"
         class="object-contain h-screen w-full bg-black mx-auto"
