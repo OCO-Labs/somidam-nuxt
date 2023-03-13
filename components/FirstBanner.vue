@@ -8,43 +8,35 @@ export default {
 </script>
 
 <template>
-  <div class="snap-y snap-mandatory h-screen w-screen overflow-scroll">
-    <div class="snap-start h-screen w-screen bg-[url('@/assets/startPic.webp')] bg-center bg-cover ">
-      <div class="flex flex-col items-center justify-center w-screen h-screen bg-black 0 bg-opacity-90">
-        <img
-          src="~/assets/somidam_logo.svg"
-          class="object-contain h-52 w-52 mx-auto"
-        >
-      </div>
-    </div>
+  <div class="h-screen w-screen overflow-scroll scroll-smooth">
     <NavScroll />
-    <div class="snap-start snap-always h-screen w-screen">
+    <div class="h-screen w-screen">
       <NavBar />
       <img
         src="~/assets/somidam_logo.svg"
         class="object-contain h-screen w-screen bg-white mx-auto"
       >
     </div>
-    <div class="snap-start snap-always h-screen w-screen">
+    <div class="h-screen w-screen">
       <img
         src="~/assets/somidam_logo.svg"
         class="object-contain h-screen w-full bg-black mx-auto"
       >
     </div>
 
-    <div class="snap-start snap-always h-screen w-screen">
+    <div class="h-screen w-screen">
       <img
         src="~/assets/somidam_logo.svg"
         class="object-contain h-screen w-full bg-white mx-auto"
       >
     </div>
-    <div class="snap-start snap-always h-screen w-screen">
+    <div class="h-screen w-screen">
       <img
         src="~/assets/somidam_logo.svg"
         class="object-contain h-screen w-full bg-black mx-auto"
       >
     </div>
-    <div class="snap-start snap-always h-screen w-screen">
+    <div class="h-screen w-screen">
       <img
         src="~/assets/somidam_logo.svg"
         class="object-contain h-screen w-full bg-black mx-auto"
